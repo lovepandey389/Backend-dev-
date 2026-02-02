@@ -19,4 +19,15 @@ fs.readFile(inputFile, 'utf8', (err, data) => {
             console.log("Word count written to output.txt");
         }
     });
-});
+});a
+
+
+const http = require('http');
+const fs = reqiure('fs');
+const myserver = http.createserver ((req,res) => {
+    console.log("new req server");
+    res.end("hello from the server"); 
+})
+myserver.listen(8000,() => {
+    console.log("server is not started at 8000");
+})
